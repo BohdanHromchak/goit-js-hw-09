@@ -12,8 +12,12 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    console.log(selectedDates[0]);
+    // console.log(selectedDates[0]);
   },
 };
 
 const fp = flatpickr(input, options);
+
+// помістити в колбек і буде стягувати по інпуту інфу
+const expectedDate = new Date(input.value);
+console.log(expectedDate);
