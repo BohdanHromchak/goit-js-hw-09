@@ -1,3 +1,6 @@
+import Notiflix from 'notiflix';
+// console.log(Notiflix);
+
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
   if (shouldResolve) {
@@ -6,3 +9,9 @@ function createPromise(position, delay) {
     // Reject
   }
 }
+
+const form = document.querySelector('.form');
+
+form.addEventListener('submit', evt => {
+  evt.preventDefault();
+});
